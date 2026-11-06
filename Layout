@@ -1,0 +1,16 @@
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
+
+class SamuelApp(App):
+    def build(self):
+        koren = BoxLayout(orientation="horizontal")
+        koren.add_widget(Button(text="Jeden"))
+        koren.add_widget(Button(text="Dva"))
+        koren.add_widget(Button(text="Tri"))
+
+        return koren
+
+SamuelApp().run() 

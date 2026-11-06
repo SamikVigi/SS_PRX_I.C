@@ -1,0 +1,25 @@
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.textinput import TextInput
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.gridlayout import GridLayout
+
+class SamuelApp(App):
+    def build(self):
+        koren = BoxLayout(orientation="vertical")
+        koren.add_widget(TextInput(hint_text = "text"))
+
+        riadok1 = BoxLayout(orientation="horizontal")
+        riadok1.add_widget(Button(text = "Save"))
+        riadok1.add_widget(Button(text = "Quit"))
+
+        riadok2 = BoxLayout(orientation="horizontal")
+        riadok2.add_widget(Button(text = "Select"))
+        riadok2.add_widget(Button(text = "Delete"))
+        
+        koren.add_widget(riadok1)
+        koren.add_widget(riadok2)
+
+        return koren
+
+SamuelApp().run() 
