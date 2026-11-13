@@ -9,7 +9,7 @@ class SamuelApp(App):
         koren = BoxLayout(orientation="vertical")
         koren.add_widget(Label(text="Prihlásenie", font_size="40sp", size_hint=(1, 0.3)))
         koren.add_widget(TextInput(hint_text="Meno", multiline=False))
-        koren.add_widget(TextInput(hint_text="Heslo...", password=True))
+        koren.add_widget(TextInput(hint_text="Heslo...", password=True, multiline=False))
 
         koren2 = BoxLayout(orientation="horizontal")
         koren2.add_widget(Button(text="Zrušiť"))
